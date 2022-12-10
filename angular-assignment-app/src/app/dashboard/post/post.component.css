@@ -1,0 +1,17 @@
+.buttonGrid{
+    margin: 5px;
+}
+
+.mandatoryTextClass{
+    display: inline-block;
+    color: red;
+}
+
+.button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+  }

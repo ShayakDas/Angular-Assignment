@@ -1,0 +1,14 @@
+<div class="container-parent">   
+    <div class="container-child">
+        <app-post (posting)="onPost($event)">
+        </app-post>
+    </div>
+    <div class="container-child">
+        <app-posttracker [totalPostTrackerCount]="postTrackerCount">          
+        </app-posttracker>
+    </div>
+    <div class="container-child">
+        <app-newsfeed>           
+        </app-newsfeed>
+    </div>  
+</div>

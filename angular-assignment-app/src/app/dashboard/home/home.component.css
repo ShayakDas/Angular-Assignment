@@ -1,0 +1,10 @@
+.container-parent{
+    display:flex,
+}
+
+.container-child{
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    
+}

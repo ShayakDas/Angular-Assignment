@@ -1,0 +1,18 @@
+<div>
+    <label>Title: </label>
+    <input type="text" name="titletextbox" placeholder="Please write the title" [(ngModel)]="title" required #titleFormControl=ngModel>
+    <div class="mandatoryTextClass" *ngIf="titleFormControl.errors">
+        <p *ngIf="titleFormControl.errors['required']">
+            *Title is mandatory
+        </p>
+    </div>
+</div>
+<br/>
+<div>
+    <label>Content: </label>
+    <textarea rows="5" column="5" name="contenttextarea" #content [(ngModel)]="postcontent"></textarea>
+</div>
+<div class="buttonGrid">
+    <input class="button" type="Submit" value="Post"  (click)="post()">
+    <input class="button" type="Submit" value="Clear" (click)="clear()">
+</div>
